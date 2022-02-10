@@ -16,15 +16,17 @@
         <h1>Dashboard da aplicação</h1>
 
         <div class="actionArea">
-            <button class="btn" onclick="sendAPI(1)">Ligar lâmpada<button>
-            <button class="btn" onclick="sendAPI(0)">Desligar lâmpada</button>
+            <div class="inputGroup" title="Controle a luminosidade para ser atualizada no thingSpeak">
+                <label id="val_range">Potência: 0 W</label>
+                <input type="range" value="0" min="0" max="200" id="range">
+            </div>
         </div>
 
         <div class="chartArea">
-            <iframe
-                src="https://thingspeak.com/channels/1603270/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&timescale=10&title=Gr%C3%A1fico+de+requisi%C3%A7%C3%B5es&type=line">
-            </iframe>
+            <iframe style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1603270/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=5&title=Gr%C3%A1fico+de+requisi%C3%A7%C3%B5es&type=spline"></iframe>
         </div>
+
+        <p style="text-align: center;margin-top: 5px; color: #6d6b6b;">existe um delay de no min 15s para atualização, por favor espere!</p>
     </div>
 
     <script src="index.js"></script>

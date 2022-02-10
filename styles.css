@@ -61,3 +61,14 @@
 .btn:hover {
     box-shadow: 1px 1px 3px var(--btn-bg-primary-color);
 }
+
+.inputGroup label{
+    display: block;
+}
+
+
+.img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
