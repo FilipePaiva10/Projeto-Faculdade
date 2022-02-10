@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --btn-bg-primary-color: #28a745!important;
+    --btn-primary-color: #FFF!important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1078px;
+    padding: 20px 5px;
+    margin: auto;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.chartArea {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.chartArea iframe {
+    width: 40%;
+    min-width: 320px;
+    min-height: 280px;
+    border: 1px solid #f7f7f7;
+}
+
+.actionArea {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn {
+    margin: 0 5px;
+    height: 40px;
+    background-color: var(--btn-bg-primary-color);
+    color: var(--btn-primary-color);
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    transition: all ease-in-out .3s;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 3px var(--btn-bg-primary-color);
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de integração com thingSpeak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <h1>Dashboard da aplicação</h1>
+
+        <div class="actionArea">
+            <button class="btn" onclick="sendAPI(1)">Ligar lâmpada<button>
+            <button class="btn" onclick="sendAPI(0)">Desligar lâmpada</button>
+        </div>
+
+        <div class="chartArea">
+            <iframe
+                src="https://thingspeak.com/channels/1603270/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&timescale=10&title=Gr%C3%A1fico+de+requisi%C3%A7%C3%B5es&type=line">
+            </iframe>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
